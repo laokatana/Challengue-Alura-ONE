@@ -2,13 +2,17 @@ window.addEventListener("DOMContentLoaded", () => {
   let butttonEncriptar = document.getElementById("encriptar");
   let textArea = document.getElementById("textArea");
   let textoEncriptado = document.getElementById("textArea2");
+  let encriptado = ["ai", "enter", "imes", "ober", "ufat"];
 
   textArea.addEventListener("input", () => {
     let escribiendo = textArea.value;
 
-    butttonEncriptar.addEventListener("click", () => {
+    butttonEncriptar.addEventListener("click", (event) => {
+      event.preventDefault();
       escribiendo.toLowerCase();
-      let capturando = escribiendo.replaceAll(/[aeoiu]/g, "ying");
+
+      const regExp = /[aeiou]/g;
+      let capturando = escribiendo.replaceAll(regExp, "R");
 
       textoEncriptado.innerText = capturando;
     });
@@ -16,12 +20,12 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 //const nuevaStr = str.replace("ava", "-");
-
-let encriptacion = [
+/*
+let letrasAencriptar = [
   ["a", "ai"],
   ["e", "enter"],
   ["i", "imes"],
   ["o", "ober"],
   ["u", "ufat"],
 ];
-console.log(encriptacion);
+*/
