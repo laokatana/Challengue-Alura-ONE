@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="encriptador.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favi/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/encriptador.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Rajdhani:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Encriptador</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <h1 class="titulo">PROYECTO ENCRIPTADOR</h1>
-        <p class="descripcion">
-            hola como va tood por ahi 
-            yo aca bien flasshando u ratiko
-        </p>
-    
-    </header> 
-   
+      <h1 class="titulo">PROYECTO ENCRIPTADOR</h1>
+      <p class="descripcion">hola como va todo por ahi ?</p>
+    </header>
 
-<div class="padre">
+    <div class="padre">
+      <section class="container">
+        <textarea
+          type="text"
+          class="input-text"
+          id="textArea"
+          placeholder="ingrese el texto aqui"
+        ></textarea>
 
-    <section class="container" >
-        <textarea type="text" class="input-text" id="textArea" placeholder="ingrese el texto aqui"></textarea>
-        
         <div class="container-botones">
-            <input type="button" class="button" value="Encriptar" id="encriptar">
-            <input type="button" class="button" value="Desencriptar" id="desencriptar">
+          <button
+            type="button"
+            class="button"
+            id="encriptar"
+            value="encriptar"
+            
+          >encriptar</button>
+
+          <button
+            type="button"
+            class="button2"
+            value="Desencriptar"
+            id="desencriptar"
+          >desencriptar</button>
+
+
+        </div>
+      </section>
+
+      <section class="container2">
+        <textarea
+          type="text"
+          class="input-text-area"
+          id="textArea2"
+          placeholder="ingrese el texto aqui"
+        ></textarea>
+        <div class="container-botones">
+          <input type="button" class="copiar" value="copiar"/>
         </div>
         
-    </section>
-   
-    <section class="container2" >
-        <textarea type="text" class="input-text" id="textArea2" placeholder="ingrese el texto aqui"></textarea>
-        <input type="button" class="copiar" value="copiar">
-        
-    </section>
+      </section>
+    </div>
 
-
-</div>
-   
-
-
-    <script src="encriptacion.js"></script>
-</body>
+    <script src="scripts/encriptacion.js" defer></script>
+  
+  </body>
 </html>
