@@ -16,9 +16,10 @@ body {
 
 .titulo:hover {
   transition: 0.5s;
-  transform: scale(0.5);
+  transform: scale(1);
   box-shadow: -1px -1px 2px #31890f;
   border: solid 1px #23371b;
+  cursor: pointer;
 }
 
 .descripcion {
